@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainMenuActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/hello"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="18dp"
+            android:text="@string/daystreak"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="15dp"
+            app:contentPadding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/training"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/training"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="32dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/training_description"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/training"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/start"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="67dp"
+                    android:backgroundTint="@color/gray"
+                    android:paddingHorizontal="56dp"
+
+
+                    android:text="@string/start_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:strokeColor="@color/gray" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/textView5"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:paddingHorizontal="0dp"
+            android:text="Сохраненные звуки"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="10dp"
+            android:id="@+id/saved_sounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:layout_editor_absoluteX="0dp"
+            tools:itemCount="10"
+            tools:listitem="@layout/saved_sound_item1"
+            tools:orientation="horizontal">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showall"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gray"
+            android:paddingHorizontal="56dp"
+            android:text="Посмотреть все"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="1000dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_sounds"
+            app:strokeColor="@color/gray">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rule"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:paddingHorizontal="0dp"
+            android:text="@string/pronounciation_rules"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showall" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="@+id/rule"
+            app:layout_constraintStart_toEndOf="@+id/rule"
+            app:layout_constraintTop_toTopOf="@+id/rule">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/gorilla1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gorilla"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rule">
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Как произнести 'ъ'"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gorilla1">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/gorilla2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/gorilla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rule">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:text="Че задали"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@+id/gorilla2">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

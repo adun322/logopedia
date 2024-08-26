@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:contentPadding="15dp"
+    android:layout_marginStart="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/saved_sound_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:text="Header"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/saved_sound_tag"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="33dp"
+            android:layout_height="16dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTintMode="@color/teal_200"
+            android:clickable="false"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_sound_name"
+
+            tools:text="tag" />
+
+        <ImageButton
+            android:contentDescription="pon"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@drawable/drawable_corner_play_button"
+            android:backgroundTintMode="@color/black"
+            android:src="@drawable/baseline_play_arrow_24"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saved_sound_tag">
+
+        </ImageButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

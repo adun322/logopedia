@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="70dp"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DiagnosticActivtiy">
+
+        <ImageView
+            android:id="@+id/return_arrow"
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="20dp"
+            >
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тренировка"
+            android:layout_marginStart="7dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/return_arrow"
+            app:layout_constraintStart_toEndOf="@+id/return_arrow"
+            app:layout_constraintTop_toTopOf="@+id/return_arrow" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="15dp"
+            app:contentPadding="15dp"
+            app:contentPaddingTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/block_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Блок 1. Звуки"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/block_description1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:padding="0dp"
+                    android:text="Считается, что человечество еще не придумало, как произносить “ъ”. Но не верьте этому - все возможно."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_name1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/begin1"
+                    android:layout_marginTop="17dp"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+
+
+                    android:paddingHorizontal="56dp"
+                    android:text="@string/start_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_description1"
+                    app:strokeColor="@color/gray" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="30dp"
+            android:id="@+id/materialCardView3"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:contentPadding="15dp"
+            app:contentPaddingTop="0dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/block_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Блок 2. Слова"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/block_description2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:padding="0dp"
+                    android:text="Считается, что человечество еще не придумало, как произносить “ъ”. Но не верьте этому - все возможно."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_name2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/begin2"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginTop="17dp"
+
+
+                    android:paddingHorizontal="56dp"
+                    android:text="@string/start_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_description2"
+                    app:strokeColor="@color/gray" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="30dp"
+            android:id="@+id/materialCardView4"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:contentPadding="15dp"
+            app:contentPaddingTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView3">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/block_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Блок 3. Предложения"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/block_description3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:padding="0dp"
+                    android:text="Считается, что человечество еще не придумало, как произносить “ъ”. Но не верьте этому - все возможно."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_name3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/begin3"
+                    android:layout_marginTop="17dp"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+
+
+                    android:paddingHorizontal="56dp"
+                    android:text="@string/start_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_description3"
+                    app:strokeColor="@color/gray" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="15dp"
+            app:contentPadding="15dp"
+            app:contentPaddingTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView4">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/block_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Блок 4. Скороговорки"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/block_description4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:padding="0dp"
+                    android:text="Считается, что человечество еще не придумало, как произносить “ъ”. Но не верьте этому - все возможно."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_name4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/begin4"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray"
+                    android:layout_marginTop="17dp"
+
+
+                    android:paddingHorizontal="56dp"
+                    android:text="@string/start_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/block_description4"
+                    app:strokeColor="@color/gray" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

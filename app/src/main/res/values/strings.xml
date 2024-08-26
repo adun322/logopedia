@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Logopedia</string>
+    <string name="hello">Привет!🌟</string>
+    <string name="daystreak">Дней подряд: x 🏆</string>
+    <string name="training_description">Тренируйтесь в произношении!</string>
+    <string name="training">Тренировка</string>
+    <string name="start_button_text">Начать</string>
+    <string name="pronounciation_rules">Правила произношения</string>
+    <string name="start_diag">Нажмите, чтобы начать упражнение</string>
+</resources>
