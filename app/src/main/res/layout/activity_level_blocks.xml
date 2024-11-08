@@ -12,7 +12,7 @@
         tools:context=".DiagnosticActivtiy">
 
         <ImageView
-            android:id="@+id/return_arrow"
+            android:id="@+id/return_arrow5"
             android:layout_width="12dp"
             android:layout_height="24dp"
             android:src="@drawable/baseline_arrow_back_ios_new_24"
@@ -26,7 +26,7 @@
         </ImageView>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/level_blocks_h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Тренировка"
@@ -34,9 +34,9 @@
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/return_arrow"
-            app:layout_constraintStart_toEndOf="@+id/return_arrow"
-            app:layout_constraintTop_toTopOf="@+id/return_arrow" />
+            app:layout_constraintBottom_toBottomOf="@+id/return_arrow5"
+            app:layout_constraintStart_toEndOf="@+id/return_arrow5"
+            app:layout_constraintTop_toTopOf="@+id/return_arrow5" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materialCardView2"
@@ -48,7 +48,7 @@
             app:contentPaddingTop="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/level_blocks_h"
             >
 
 

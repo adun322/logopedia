@@ -20,7 +20,6 @@ public class SavedSoundsAdapter extends RecyclerView.Adapter<SavedSoundsAdapter.
 
         public ViewHolder(View view) {
             super(view);
-            // Define click listener for the ViewHolder's View
 
             textView = (TextView) view.findViewById(R.id.saved_sound_name);
             tag = (TextView) view.findViewById(R.id.saved_sound_tag);

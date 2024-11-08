@@ -22,7 +22,7 @@
     </ImageView>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/start_diag_theader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Тренировка"
@@ -49,7 +49,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/start_diag_theader">
 
     </ImageButton>
 
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/start_diag" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/showall"
+        android:id="@+id/back_to_theory"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_marginBottom="50dp"
         android:layout_width="wrap_content"
