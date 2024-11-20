@@ -88,9 +88,6 @@ public class DiagnosticActivtiy extends AppCompatActivity {
             return insets;
         });
 
-
-        ///// ОТДЕЛ ВОСПРОИЗВЕДЕНИЯ ЗВУКОВ! ЗВУКИ ЕЩЁ НЕ ВЫБРАНЫ, НО ГОТОВЫ К ВОСПРОИЗВЕДЕНИЮ
-
 //        Button myButton = findViewById(R.id.audio_test);
 //        myButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -174,8 +171,7 @@ public class DiagnosticActivtiy extends AppCompatActivity {
         //  sending
         Boolean f = true;
 
-        /// ЗДЕСЬ БУДЕТ РЕАЛИЗОВАНО ОТПРАВЛЕНИЕ ЗАПИСАННОГО ФАЙЛА НА СЕРВЕР - ИНТЕРФЕЙС ДЛ ЭТОГО ГОТОВ
-
+        /////////////// in development
 
         TextView pon;
         pon = findViewById(R.id.result_text);
